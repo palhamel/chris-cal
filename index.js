@@ -3,32 +3,35 @@ var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
-// today = mm + '/' + dd + '/' + yyyy;
-// document.write(today);
 today = yyyy + '-' + mm + '-' + dd;
+
 const currentDay = today;
 console.log(currentDay)
 
 // ------------------------------
-
+// Get HTML elements:
 const dateElement= document.getElementsByClassName('grid-item');
-// const dateElement = document.getElementById('lucka')
-console.log(dateElement);
+// console.log('collection:', dateElement);
 
+// Loop thru the HTML collection and match the 'data-date'
 for (let item of dateElement) {
-  console.log(item.dataset.date);
+  console.log('date:', item.dataset.date);
+  if (item.dataset.date == currentDay) {
+    item.classList.add("today")
+  } else if (item.dataset.date > currentDay) {
+    item.classList.add("future")
+  } else {
+    item.classList.add("past")
+  }
 }
+
+
 
 // const specifiedDate = dateElement[2].dataset.date;
 
 // en for loop på arrayen?
 
 // console.log(specifiedDate)
-
-
-
-
-
 
 
 
