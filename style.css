@@ -5,17 +5,20 @@
   background: red;
   margin: 10px;
 }
+.past {
+  background: rgb(208, 208, 208);
+  border: rgb(0, 0, 0) 1px solid;
+}
+
 .today {
   background: yellow;
-  border: red 1px solid;
+  border: rgb(7, 23, 140) 3px dotted;
 }
-.past {
-  background: black;
-  border: red 1px solid;
-}
+
 .future {
-  background: whitesmoke;
+  background: rgb(180, 255, 180);
   border: red 1px solid;
 }
 .active {
 }
+
