@@ -5,6 +5,20 @@
   background: red;
   margin: 10px;
 }
+
+.grid-item:hover {
+  opacity: 0.6;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+
 .past {
   background: rgb(208, 208, 208);
   border: rgb(0, 0, 0) 1px solid;
@@ -16,8 +30,8 @@
 }
 
 .future {
-  background: rgb(180, 255, 180);
-  border: red 1px solid;
+  background: rgba(180, 255, 180, 0.338);
+  border: rgb(0, 0, 0) 1px solid;
 }
 .active {
 }
