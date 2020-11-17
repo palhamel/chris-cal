@@ -9,7 +9,7 @@
 .grid-item:hover {
   opacity: 0.6;
   transition: all .3s ease-in-out;
-  cursor: pointer;
+  cursor: default;
 }
 
 .not-active {
@@ -20,17 +20,17 @@
 }
 
 .past {
-  background: rgb(208, 208, 208);
+  background: rgb(193, 183, 183);
   border: rgb(0, 0, 0) 1px solid;
 }
 
 .today {
-  background: yellow;
+  background: rgb(255, 0, 17);
   border: rgb(7, 23, 140) 3px dotted;
 }
 
 .future {
-  background: rgba(180, 255, 180, 0.338);
+  background: rgba(203, 91, 91, 0.338);
   border: rgb(0, 0, 0) 1px solid;
 }
 
